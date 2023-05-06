@@ -26,6 +26,7 @@ function numberOfPages() {
     }
 }
 
+window.onload = numberOfPages;
 window.onresize = numberOfPages;
 
 const shuffle = (array) => {
