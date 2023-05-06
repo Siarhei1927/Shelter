@@ -974,8 +974,7 @@ a:visited {
         background-color: #292929;
         right: 100%;
         width: 100%;
-        height: 100%;
-        padding: 432px 35px;
+        padding: 248px 35px;
         animation: shows 2s;
         display: flex;
         flex-direction: column;
@@ -1013,6 +1012,10 @@ a:visited {
 
     .header.open .about {
         opacity: 0.6;
+    }
+
+    .header.open .ourFriends-content {
+        display: none;
     }
 
     #jennifer {
@@ -1128,7 +1131,19 @@ a:visited {
     }
 
     .popup-image {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 60%;
+        padding: 0px;
+    }
+
+    .popup.active {
+        transform: translate(-50%, -50%) scale(1);
+        transition: 0.5s all;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .help-container {

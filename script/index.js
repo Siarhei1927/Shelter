@@ -4,11 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.addEventListener("click", function () {
         document.querySelector("header").classList.toggle("open");
     })
-    // body.addEventListener("click", function(event) {
-    //     if (event.target != menu) {
-    //         document.querySelector("header").classList.remove("open"); 
-    //     }
-    // })
 
     document.getElementById("link-text-color").addEventListener("click", function cozyAlert() {
         alert("Welcome to Cozy House")
