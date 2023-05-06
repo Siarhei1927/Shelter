@@ -16,8 +16,8 @@ body {
 }
 
 .header {
-    background:#fff;
-    width: 100%;   
+    background: #fff;
+    width: 100%;
 }
 
 .wrapper {
@@ -90,13 +90,15 @@ a {
     cursor: pointer;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #545454;
     text-decoration: none;
 }
 
 .nav-list li a:hover {
-    border-bottom: 3px solid #F1CDB3;;
+    border-bottom: 3px solid #F1CDB3;
+    ;
     color: #F1CDB3;
 }
 
@@ -128,7 +130,7 @@ a:link, a:visited {
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.3rem 0rem;
 }
 
@@ -237,7 +239,8 @@ a:link, a:visited {
     font-family: 'Georgia';
 }
 
-.left-button, .double-left-button {
+.left-button,
+.double-left-button {
     background-color: #F6F6F6;
     display: flex;
     justify-content: center;
@@ -313,7 +316,8 @@ a:link, a:visited {
     width: 63%;
 }
 
-.footer-content__question, .footer-content__waiting {
+.footer-content__question,
+.footer-content__waiting {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -337,11 +341,13 @@ a:link, a:visited {
     padding-bottom: 39px;
 }
 
-.footer-email, .footer-pin {
+.footer-email,
+.footer-pin {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .email {
     width: 40px;
     height: 26px;
@@ -406,7 +412,7 @@ a:link, a:visited {
 }
 
 .popup-bg.active {
-    opacity: 1; 
+    opacity: 1;
     pointer-events: all;
     transition: 0.5s all;
 }
@@ -455,7 +461,9 @@ a:link, a:visited {
     line-height: 130%;
     padding-bottom: 25px;
 }
-.type, .breed {
+
+.type,
+.breed {
     font-size: 20px;
     line-height: 115%;
 }
@@ -465,7 +473,10 @@ a:link, a:visited {
     line-height: 110%;
 }
 
-.age, .inoculations, .diseases, .parasites {
+.age,
+.inoculations,
+.diseases,
+.parasites {
     font-weight: 700;
     font-size: 15px;
     line-height: 110%;
@@ -525,61 +536,83 @@ a:link, a:visited {
     .header {
         padding: 29px 30px 30px;
     }
+
+    .header.open .wrapper {
+        justify-content: flex-end;
+        padding: 0px 32px 40px 20px;
+    }
+
     .wrapper {
         padding: 0px;
     }
+
     .ourFriends-content {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding-top: 27px;
         padding-bottom: 32px;
     }
+
     .ourFriends-container {
         padding: 82px 75px 72px;
     }
+
     .ourFriends-title {
         padding: 27px 0px 29px 0px;
     }
+
     #scarlett {
         display: none;
     }
+
     #freddie {
         display: none;
     }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
         padding-top: 15px;
     }
+
     .footer-content {
         width: 93%;
     }
+
     .footer-content__question {
         width: 44%;
     }
+
     .waiting-left {
         width: 47%;
     }
+
     .footer-h2 {
         padding-bottom: 40px;
     }
+
     .footer-email {
         align-items: center;
     }
+
     .footer-phone {
         padding-top: 40px;
         align-items: center;
     }
+
     .waiting {
         padding-bottom: 31px;
     }
+
     #footer-boston-adress {
         padding-bottom: 31px;
         align-items: center;
     }
+
     .footer-pin {
         align-items: center;
     }
+
     .footer-image {
         padding-top: 60px;
     }
@@ -589,12 +622,15 @@ a:link, a:visited {
     .header-burger {
         display: block;
     }
+
     .header-burger .open {
         display: none;
     }
+
     .header-navy {
         display: none;
     }
+
     .nav {
         position: absolute;
         right: -100%;
@@ -606,28 +642,37 @@ a:link, a:visited {
         transition: transform .5s;
         animation: shows 1s;
     }
-    
+
+    .header.open .wrapper {
+        justify-content: flex-end;
+        padding: 0px 32px 40px 20px;
+    }
+
     @keyframes shows {
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }
     }
+
     .nav-list {
         display: block;
     }
+
     .nav-item {
         float: none;
         font-size: 23px;
         display: block;
     }
+
     nav ul li {
         padding: 10px 0px;
     }
 
-    .header.open .nav{
+    .header.open .nav {
         transform: translateX(100%);
         background-color: #fff;
         right: 100%;
@@ -635,15 +680,22 @@ a:link, a:visited {
         padding: 248px 5px;
     }
 
-    .header.open .header-navy{
+    .header.open .nav-item {
+        padding: 0px 0px 40px;
+        font-size: 32px;
+    }
+
+    .header.open .header-navy {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         list-style: none;
     }
+
     .header {
         padding: 31px 20px 30px;
     }
+
     .header-topbar {
         padding-right: 64px;
     }
@@ -653,76 +705,103 @@ a:link, a:visited {
     .ourFriends-title {
         padding-bottom: 28px;
     }
+
     .ourFriends-h2 {
         font-size: 25px;
     }
+
     .ourFriends-container {
         padding: 42px 10px 40px;
     }
+
     .ourFriends-content {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding-top: 40px;
         padding-bottom: 35px;
     }
+
     #sophia {
         display: none;
     }
+
     #timmy {
         display: none;
     }
+
     #charly {
         display: none;
     }
-   
+
     .main-button {
         padding: 0px 10px;
     }
-    
+
     .popup-image {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 60%;
+        padding: 0px;
     }
-    
+
+    .popup.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .footer-container {
         padding: 14px 5px 0px;
     }
+
     .footer-h2 {
         font-size: 25px;
         text-align: center;
     }
-    .footer-content{
+
+    .footer-content {
         width: 100%;
         flex-direction: column;
     }
+
     .footer-content__question {
         width: 100%;
     }
+
     .footer-content__question {
         align-items: center;
     }
+
     .waiting-left {
         width: 100%;
         padding: 37px 5px 0px;
         align-items: center;
     }
+
     .waiting {
         padding: 0px 5px 39px;
 
     }
+
     .pin {
         padding-right: 20px;
     }
+
     .footer-image {
         padding-top: 40px;
         justify-content: center;
     }
+
     .footer-puppy {
         width: 86.6%;
     }
+
     #footer-boston-adress {
         padding-bottom: 38px;
         justify-content: center;
     }
+
     .footer-pin {
         width: 100%;
         padding-right: 5px;
@@ -735,10 +814,10 @@ a:link, a:visited {
         padding-bottom: 38px;
         justify-content: flex-start;
     }
+
     .footer-pin {
         width: 100%;
         padding-right: 5px;
         justify-content: flex-start;
     }
 }
-

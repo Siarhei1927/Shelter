@@ -1128,7 +1128,19 @@ a:visited {
     }
 
     .popup-image {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 60%;
+        padding: 0px;
+    }
+
+    .popup.active {
+        transform: translate(-50%, -50%) scale(1);
+        transition: 0.5s all;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .help-container {
